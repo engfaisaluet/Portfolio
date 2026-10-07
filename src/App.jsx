@@ -7,7 +7,7 @@ import SkillsPage from "./components/Skills";
 import EducationPage from "./components/Education";
 import ExperiencePage from "./components/Experience";
 import ProjectsPage from "./components/Projects";
-import { ResearchSection, InterestsSection, AchievementsSection } from "./components/PortfolioSections";
+import { ResearchSection, InterestsSection, AchievementsSection, CertificationsSection } from "./components/PortfolioSections";
 import { DarkModeProvider, useDarkMode } from "./context/DarkModeProvider"; // Import DarkModeProvider
 
 const App = () => {
@@ -67,6 +67,7 @@ const AppContent = () => {
             element={<ProjectsPage />}
             key={darkMode ? "dark-projects" : "light-projects"}
           />
+          <Route path="/certifications" element={<CertificationsSection />} />
           <Route path="/research" element={<ResearchSection />} />
           <Route path="/interests" element={<InterestsSection />} />
           <Route path="/achievements" element={<AchievementsSection />} />

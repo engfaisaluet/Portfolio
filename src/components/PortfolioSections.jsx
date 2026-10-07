@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaAward, FaBolt, FaBrain, FaChartLine, FaFlask, FaGraduationCap, FaTools } from 'react-icons/fa';
+import { FaAward, FaBolt, FaCertificate, FaBrain, FaChartLine, FaFlask, FaGraduationCap, FaTools } from 'react-icons/fa';
 import {
   profile, researchAreas, currentResearch, publications, projects,
-  skills, experience, education, achievements,
+  skills, experience, education, certifications, achievements,
 } from '../data/portfolio';
 
 const card = 'portfolio-card bg-white dark:bg-gray-800 shadow-xl rounded-xl p-6 border border-gray-100 dark:border-gray-700';
@@ -59,6 +59,7 @@ export function ResearchSection() {
       <div className="space-y-5">{publications.map((publication, index) => <article key={publication.title} className={card}>
         <div className="flex flex-wrap items-center gap-3 text-sm font-semibold"><span className="rounded-full bg-blue-100 dark:bg-blue-900 px-3 py-1 text-blue-700 dark:text-blue-200">{index + 1}</span><span className="text-blue-600 dark:text-blue-300">{publication.status}</span></div>
         <h3 className="mt-4 text-xl sm:text-2xl font-bold italic leading-snug">{publication.title}</h3>
+        {publication.authors && <p className="mt-3 text-gray-700 dark:text-gray-200">{publication.authors}</p>}
         <p className="mt-3 text-gray-600 dark:text-gray-300">{[publication.venue, publication.year].filter(Boolean).join(' · ')}</p>
         {publication.note && <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{publication.note}</p>}
         {publication.url && <a href={publication.url} target="_blank" rel="noopener noreferrer" className={`${button} mt-5`}>View Published Paper</a>}
@@ -102,6 +103,12 @@ export function ExperienceSection() {
 export function EducationSection() {
   return <Section id="education" title="Education" subtitle="Academic foundation in mechanical engineering.">
     {education.map(item => <article key={item.degree} className={`${card} max-w-3xl mx-auto text-center`}><FaGraduationCap className="mx-auto text-5xl text-blue-500" aria-hidden="true" /><h2 className="mt-5 text-2xl sm:text-3xl font-bold">{item.degree}</h2><p className="mt-3 text-lg text-blue-600 dark:text-blue-300">{item.department}</p><p className="mt-2 text-gray-600 dark:text-gray-300">{item.institution}</p></article>)}
+  </Section>;
+}
+
+export function CertificationsSection() {
+  return <Section id="certifications" title="Certifications" subtitle="Professional training in AI, data science, project management, and renewable-energy testing.">
+    <div className="grid md:grid-cols-2 gap-6">{certifications.map(item => <article key={item.title} className={card}><FaCertificate className="text-4xl text-blue-500" aria-hidden="true" /><h2 className="mt-4 text-xl font-bold">{item.title}</h2><p className="mt-2 text-blue-600 dark:text-blue-300 font-semibold">{item.issuer}</p></article>)}</div>
   </Section>;
 }
 

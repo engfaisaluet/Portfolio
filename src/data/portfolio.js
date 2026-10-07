@@ -5,6 +5,9 @@ export const profile = {
   university: 'University of Engineering and Technology (UET), Lahore',
   role: 'Mechanical Engineer · Renewable Energy Researcher',
   positioning: 'Working at the intersection of renewable energy, photovoltaic systems, machine learning, and predictive modeling.',
+  cvUrl: 'https://drive.google.com/uc?export=download&id=1JR4TWkkYhutcummLaRUzZ-mnpzuZWjvj',
+  cvViewUrl: 'https://drive.google.com/file/d/1JR4TWkkYhutcummLaRUzZ-mnpzuZWjvj/view?usp=drive_link',
+  scholarUrl: 'https://scholar.google.com/citations?view_op=list_works&hl=en&user=oTPZS2oAAAAJ',
 };
 
 export const researchAreas = [
@@ -25,11 +28,14 @@ export const currentResearch = [
 ];
 
 export const publications = [
-  { title: 'Zn–Co nanoferrite electrocatalysts for enhanced hydrogen and oxygen generation', venue: 'Results in Chemistry', year: '2025', status: 'Published', url: 'https://www.sciencedirect.com/science/article/pii/S2211715625003753' },
-  { title: 'Using machine learning for air quality prediction and sustainable urban planning', venue: 'Sustainable Futures', year: '2025', status: 'Published', url: 'https://www.sciencedirect.com/science/article/pii/S2666188825005453' },
-  { title: 'Solar irradiance forecasting meta-review: An in-depth systematic meta-review on solar irradiance forecasting datasets, predictive pipelines and performance', venue: 'Results in Engineering', status: 'Published', note: 'Collaboration with DFKI, Germany.', url: 'https://www.sciencedirect.com/science/article/pii/S2590123026034675' },
-  { title: 'A Framework of Ensemble-Based Approach for Solar Irradiance Prediction Using NASA Irradiance Data', venue: 'Energy Conservation and Management', status: 'Research work' },
-  { title: 'Advancing Solar Energy Prediction Using Statistical, Machine Learning, and Deep Learning Models for Multi-Horizons in Lahore, Pakistan', venue: 'Energy Conservation and Management', status: 'Research work' },
+  { title: 'Using machine learning for air quality prediction and sustainable urban planning', authors: 'Mujtaba, M.A., Munir, M.A., Ali, S., Petrů, J., Ansar, T., Akhlaq, W., Ahmad, M., Iqbal, H., Faisal Ali, Bashir, M.N. and Alexander, T.', venue: 'Sustainable Futures, 10, 100981', year: '2025', status: 'Published', url: 'https://www.sciencedirect.com/science/article/pii/S2666188825005453' },
+  { title: 'Zn–Co nanoferrite electrocatalysts for enhanced hydrogen and oxygen generation', authors: 'Shahzadi, K., Sarfraz, M., Alomar, M., Mujtaba, M.A., Bashir, M.N., Ali, M.M. and Faisal Ali', venue: 'Results in Chemistry, 16, 102392', year: '2025', status: 'Published', url: 'https://www.sciencedirect.com/science/article/pii/S2211715625003753' },
+  { title: 'Solar irradiance forecasting meta-review: An in-depth systematic meta-review on solar irradiance forecasting datasets, predictive pipelines and performance', authors: 'Mehmood, F., Asim, M.N., Mehmood, A., Mahmood, W., Vollmer, S., Mehmood, Faisal Ali and Dengel, A.', venue: 'Results in Engineering', year: '2025', status: 'Published', note: 'Collaboration with DFKI, Germany.', url: 'https://www.sciencedirect.com/science/article/pii/S2590123026034675' },
+  { title: 'Hybrid Ensemble Forecasting of Solar Irradiance for Real-Time PV Energy Management in Lahore, Pakistan', authors: 'Faisal Ali, Abbas, M.M., Haq, M.U., Aziz, U., Butt, F. and Fouad, Y.', venue: 'Results in Engineering', year: '2025', status: 'Under Review' },
+  { title: 'Advancing Solar Energy Prediction Using Statistical, Machine Learning, and Deep Learning Models for Multi-Horizons in Lahore, Pakistan', authors: 'Faisal Ali, Mehmood Ul Haq, Usman Aziz, Nisha Anwar and Muhammad Baqir', venue: 'Renewable Energy', year: '2025', status: 'Under Review' },
+  { title: 'Automated Vision-Based Fire Extinguishing System Using YOLOv11 and Sensor Fusion for Safety Application', authors: 'Haq, M.U., Muneer, K., Muzammal, T., Shahzaib, Faisal Ali, Obaid, A. and Saleem, Y.', venue: 'Results in Engineering', year: '2025', status: 'Under Review' },
+  { title: 'Modification of physicochemical properties of PVP capped Abamectin Nanoparticles employing Hybrid FNP-TP', authors: 'Rafique, M.S., Shahadat, I., Faisal Ali and Ilyas, M.', venue: 'Materials Processing Technology', year: '2025', status: 'Under Review' },
+  { title: 'Diffusion Model based Re-Generation of TEM images of PVP Capped ZnO particles fabricated by Hybrid Flash Nano Precipitation-Plasma Torch Processing', authors: 'Rafique, M.S., Javed, F., Haq, M.U., Faisal Ali and Aziz, U.', venue: 'Materials & Design', year: '2025', status: 'Under Review' },
 ];
 
 export const projects = [
@@ -73,6 +79,16 @@ export const experience = [
 
 export const education = [
   { degree: 'BSc Mechanical Engineering', department: 'Department of Mechanical Engineering', institution: 'University of Engineering and Technology (UET), Lahore' },
+];
+
+export const certifications = [
+  { title: 'AI & Data Science Certificate', issuer: 'National Centre of Artificial Intelligence (NCIA)' },
+  { title: 'Introduction to Relational Databases (RDBMS)', issuer: 'IBM' },
+  { title: 'Foundation (MS Office Program) Certificate', issuer: 'NCIA' },
+  { title: 'AI/ML Fellowship Completion Certificate', issuer: 'ACM UET Lahore' },
+  { title: 'Project Management for Professionals Certificate', issuer: 'UET Academy Lahore' },
+  { title: 'Spoken English Certificate', issuer: 'NCIA' },
+  { title: 'Renewable Energy Solar and LED Testing Certification', issuer: 'CERAD (Center of Energy Research and Development, Pakistan)' },
 ];
 
 export const achievements = [

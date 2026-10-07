@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaDownload, FaGraduationCap } from 'react-icons/fa';
 import { profile } from '../data/portfolio';
 
 const roles = ['Mechanical Engineer', 'Renewable Energy Researcher', 'Machine Learning Practitioner'];
@@ -22,8 +22,10 @@ export default function Home() {
       <p className="mt-4 min-h-9 text-xl sm:text-2xl font-bold text-blue-500" aria-live="polite">{roles[roleIndex]}</p>
       <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-600 dark:text-gray-300">{profile.positioning}</p>
       <p className="mt-3 max-w-3xl text-sm sm:text-base text-gray-500 dark:text-gray-400">{profile.degree} · {profile.university}</p>
-      <div className="mt-8">
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <Link to="/research" className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-500 px-6 py-3 font-semibold text-white shadow transition-colors">Explore Research <FaArrowRight aria-hidden="true" /></Link>
+        <a href={profile.cvUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-blue-600 px-6 py-3 font-semibold text-blue-600 hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-500 dark:hover:text-white transition-colors"><FaDownload aria-hidden="true" /> Download CV</a>
+        <a href={profile.scholarUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 hover:border-blue-500 hover:text-blue-600 dark:border-gray-600 dark:text-gray-200 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors"><FaGraduationCap aria-hidden="true" /> Google Scholar</a>
       </div>
     </div>
   </main>;
